@@ -18,7 +18,9 @@ class MyWindow(QMainWindow, form_class):
 
 
         self.button1.clicked.connect(self.button1_click)
+        #버튼 1이 클릭되면 button1_click메서드 호출
         self.button2.clicked.connect(self.button2_click)
+        # 버튼 2이 클릭되면 button2_click메서드 호출
         self.statusBar().showMessage("made by shth55555 2024-03-29")
 
     def button1_click(self):
