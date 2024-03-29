@@ -14,8 +14,12 @@ class MyWindow(QMainWindow, form_class):
         super().__init__()   #부모 클래스 생성자 호출
         self.setupUi(self)    #위에서 불러온 test.ui를 연결
         self.setWindowTitle("연습 프로그램")
+        self.setWindowIcon(QIcon("ui/Image20240326124615.png"))
+
+
         self.button1.clicked.connect(self.button1_click)
         self.button2.clicked.connect(self.button2_click)
+        self.statusBar().showMessage("made by shth55555 2024-03-29")
 
     def button1_click(self):
         self.label1.setText("Hellow world!!!")
